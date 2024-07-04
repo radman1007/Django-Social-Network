@@ -3,4 +3,4 @@ from django.contrib.auth import authenticate, login, logout
 
 def log_out(request):
     logout(request)
-    return redirect(request.Meta.get('HTTP_REFERER'))
+    return 
