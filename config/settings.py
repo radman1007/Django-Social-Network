@@ -131,3 +131,8 @@ AUTH_USER_MODEL = 'social.User'
 LOGIN_REDIRECT_URL = '/profile/'
 LOGIN_URL = '/login/'
 LOGOUT_URL = '/logout/'
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'social.authentication.PhoneAuthBackend'
+]
